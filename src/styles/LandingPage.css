@@ -1,0 +1,57 @@
+.landingpage{
+    background-image: url("https://tse3.mm.bing.net/th?id=OIP.vuIoA1sawob6xE0CTKljnAHaEo&pid=Api&P=0");
+    height: 66.4vh;
+    padding: 120px;
+}
+.selectLoginType{
+    background-color: rgb(255, 242, 210);
+    padding: 50px;
+    margin:auto;
+    width: 600px;
+    height: 400px;
+}
+.user_choice .b1{
+    border: 2px solid red;
+    padding: 10px 20px;
+   background-color: white;
+   margin-right: 180px;
+   margin-top: 60px;
+   transition: 0.5s;
+
+}
+.b1:hover{
+    box-shadow: 0 0 10px red;
+
+}
+.user_choice .b2{
+    border: 2px solid green;
+    padding: 10px 20px;
+  background-color: white;
+  transition: 0.5s;
+}
+.b2:hover{
+    box-shadow: 0 0 10px green;
+}
+.admin
+{
+    font-size: 14px;
+    text-decoration: none;
+    color: red;
+}
+.admin:hover{
+    text-shadow: 0 0 10px red;
+}
+.user{
+    font-size: 15px;
+    text-decoration: none;
+    color: green
+    ;
+}
+.user:hover{
+    text-shadow: 0 0 10px green;
+}
+.img{
+    margin-top: 70px;
+    display: flex;
+    justify-content: space-around;
+}

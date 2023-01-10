@@ -1,0 +1,28 @@
+.adminnavbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(43, 43, 163, 0.899);
+}
+.adminportal{
+    margin:0px;
+}
+.adminportal h1{
+    color: lavender;
+    margin-left: 50px;
+    padding: 1px 0px;
+}
+.links li,a{
+    font-size: 20px;
+    text-decoration: none;
+    color:lavender;
+    padding: 0px 10px;
+}
+.links li{
+ display: inline-block;
+ align-items: center;
+padding-right: 20px;
+}
+.links{
+    margin-right: 30px;
+}
