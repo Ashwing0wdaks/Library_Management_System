@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
+import '../styles/Addbooks.css'
 const AddBook = () => {
     //title,categories,authors,pageCount,shortDescription,longDescription,thumdnailsUrl
     let [title,setTitle]=useState("")
@@ -18,7 +19,7 @@ const AddBook = () => {
       let bookData={title,categories,authors,pageCount,shortDescription,longDescription,thumbnailUrl}
       
         //PO-STING TO SERVER 
-        fetch('http://localhost:3004/books',{
+        fetch('http://localhost:3007/books',{
          method:'POST',
          headers:{'Content-Type':'application/json'},
          body:JSON.stringify(bookData)
@@ -28,31 +29,31 @@ const AddBook = () => {
     }
         return ( 
         <div className="addbook">
+          <div className="form1">
           <h1>Add a Book</h1>
-          <div className="form">
             <form action="" onSubmit={handleSubmit}>
                 <div className="title">
-                    <input value={title} onChange={(e)=>setTitle(e.target.value)} type="text" required placeholder="title of the book" />
+                    <input className="style" value={title} onChange={(e)=>setTitle(e.target.value)} type="text" required placeholder="title of the book" />
                 </div>
                 <div className="authors">
-                <input value={authors} onChange={(e)=>setAuthor(e.target.value)} type="text" required placeholder="author of the book" />
+                <input className="style" value={authors} onChange={(e)=>setAuthor(e.target.value)} type="text" required placeholder="author of the book" />
                 </div>
                 <div className="categories">
-                <input value={categories} onChange={(e)=>setCategory(e.target.value)} type="text" required placeholder="category of the book" />
+                <input className="style" value={categories} onChange={(e)=>setCategory(e.target.value)} type="text" required placeholder="category of the book" />
                 </div>
                 <div className="pageCount">
-                <input value={pageCount} onChange={(e)=>setPage(e.target.value)} type="number" required placeholder="count of pages " />
+                <input className="style" value={pageCount} onChange={(e)=>setPage(e.target.value)} type="number" required placeholder="count of pages " />
                 </div>
                 <div className="shortDescription">
-                <textarea value={shortDescription} onChange={(e)=>setsd(e.target.value)} required placeholder="short description" cols="30" rows="10"></textarea>
+                <textarea id="uni" value={shortDescription} onChange={(e)=>setsd(e.target.value)} required placeholder="short description" cols="30" rows="10"></textarea>
                 </div>
                 <div className="longDescription">
-                <textarea value={longDescription} onChange={(e)=>setlongDes(e.target.value)} required placeholder="long description" cols="30" rows="10"></textarea>
+                <textarea  id="uno" value={longDescription} onChange={(e)=>setlongDes(e.target.value)} required placeholder="long description" cols="30" rows="10"></textarea>
                 </div>
                 <div className="thumbnailUrl">
-                <input value={thumbnailUrl} onChange={(e)=>setThumbnail(e.target.value)} type="text" required placeholder="image of the book" />
+                <input className="style" value={thumbnailUrl} onChange={(e)=>setThumbnail(e.target.value)} type="text" required placeholder="image of the book" />
                 </div>
-                <button className="addbook">Add Book</button>
+                <button >Add Book</button>
             </form>
           </div>
         </div>

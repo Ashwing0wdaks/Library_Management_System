@@ -6,7 +6,7 @@ const ReadBook = () => {
  let params =useParams()
  useEffect(()=>{
     let fetchData = async()=>{
-        let response= await fetch(`http://localhost:3004/books/${params.id}`)
+        let response= await fetch(`http://localhost:3007/books/${params.id}`)
         let data=await response.json()
         setBook(data)
     }
@@ -16,7 +16,7 @@ const ReadBook = () => {
     return (  
         <div className="readbook">
            <div className="card">
-           <h1>Read Book</h1>
+           <h1 style={{color:'black'}}>Read Book</h1>
             <h2>{book.title}</h2>
            </div>
            <div className="card_footer">

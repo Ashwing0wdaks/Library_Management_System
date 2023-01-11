@@ -1,10 +1,10 @@
-.adminnavbar{
+.adminnavbar,.usernavbar{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: rgba(43, 43, 163, 0.899);
+    background-color: rgba(4, 4, 110, 0.899);
 }
-.adminportal{
+.adminportal,.userportal{
     margin:0px;
 }
 .adminportal h1{
@@ -12,10 +12,15 @@
     margin-left: 50px;
     padding: 1px 0px;
 }
+.userportal h1{
+    color: lavender;
+    margin-left: 50px;
+    padding: 1px 0px;
+}
 .links li,a{
     font-size: 20px;
     text-decoration: none;
-    color:lavender;
+    color:rgb(237, 237, 242);
     padding: 0px 10px;
 }
 .links li{
